@@ -4,12 +4,10 @@ steps:
     args: [
             'build',
             '-t',
-            'northamerica-northeast1-docker.pkg.dev/groovyhoon-dev/test-repo/test-image:${SHORT_SHA}',
-            '-t',
-            'northamerica-northeast1-docker.pkg.dev/groovyhoon-dev/test-repo/test-image:latest',
+            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/test-repo/image:${SHORT_SHA}',
             '--cache-from',
-            'northamerica-northeast1-docker.pkg.dev/groovyhoon-dev/test-repo/test-image:latest',
+            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/test-repo/image:latest',
             '--file',
-            'gcp-artifact-registry/Dockerfile',
+            'Dockerfile',  # Assuming Dockerfile is in the same directory
             '.'
           ]
