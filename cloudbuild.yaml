@@ -10,6 +10,6 @@ steps:
             '--cache-from',
             'northamerica-northeast1-docker.pkg.dev/nirmal-ml/test-repo/my-python-app:latest',
             '--file',
-            'gcp-artifact-registry/Dockerfile',  # Assuming Dockerfile is in the same directory
+            'Dockerfile',  # Assuming Dockerfile is in the same directory
             '.'
           ]
