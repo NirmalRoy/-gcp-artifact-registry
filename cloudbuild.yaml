@@ -4,11 +4,11 @@ steps:
     args: [
             'build',
             '-t',
-            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/myrepo/testimage:${SHORT_SHA}',
+            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/test-repo/my-python-app:${SHORT_SHA}',
             '-t',
-            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/myrepo/testimage:latest',
+            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/test-repo/my-python-app:latest',
             '--cache-from',
-            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/myrepo/testimage:latest',
+            'northamerica-northeast1-docker.pkg.dev/nirmal-ml/test-repo/my-python-app:latest',
             '--file',
             'Dockerfile',  # Assuming Dockerfile is in the same directory
             '.'
